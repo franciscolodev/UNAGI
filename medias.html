@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Medias</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estiloproductos.css">
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="preconexión" href="https://fonts.googleapis.com">
+    <link rel="preconexión" href="https://fonts.gstatic.com " crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="graphs/logotipo.png">
+</head>
+
+<body style="background: linear-gradient(#f73636, #000000, #f73636)">
+    
+    <header class="header">
+        <div class="caja">
+                    <a href="#" class="text" target="_blank"></a>
+
+
+        <nav >
+            <ul>
+                <br>
+                <li><a href="productos.html" style="color:white;">Volver a todos los Productos</a></li>
+                
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media1.png" alt="">
+                    </div>
+                    <p class="descripcion">GOKU</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>KAKASHI </p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media3.png" alt="">
+                    </div>
+                    <p class="descripcion">TOTORO
+                    </p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media4.png" alt="">
+                    </div>
+                    <p class="descripcion">STAR-WARS</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media5.png" alt="">
+                    </div>
+                    <p class="descripcion">STRANGER THINGS</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media6.png" alt="">
+                    </div>
+                    <p class="descripcion">MARCA TENEBROSA HP</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media7.png" alt="">
+                    </div>
+                    <p class="descripcion">KRUSTY</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="medias/media8.png"">
+                    </div>
+                    <p class="descripcion">FREEZER</p>
+                    <span class="precio">$ 3.000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="medias/media1.png" alt="" id="img">
+                <h2 id="modelo">MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 3.000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">XL</option>
+                            <option value="">L</option>
+                            <option value="">M</option>
+                            <option value="">S</option>
+                            <option value="">XS</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

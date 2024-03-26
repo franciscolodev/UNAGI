@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Impresiones 3D</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estiloproductos.css">
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="preconexión" href="https://fonts.googleapis.com">
+    <link rel="preconexión" href="https://fonts.gstatic.com " crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="graphs/logotipo.png">
+</head>
+
+<body style="background: linear-gradient(#f73636, #000000, #f73636)">
+    
+    <header class="header">
+        <div class="caja">
+                    <a href="#" class="text" target="_blank"></a>
+
+
+        <nav >
+            <ul>
+                <br>
+                <li><a href="productos.html" style="color:white;">Volver a todos los Productos</a></li>
+                
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion1.png" alt="">
+                    </div>
+                    <p class="descripcion">MARTILLO DE GUERRA</p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>MATE NARUTO</p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion3.png" alt="">
+                    </div>
+                    <p class="descripcion">HOGWARTS
+                    </p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion4.png" alt="">
+                    </div>
+                    <p class="descripcion">MATE YODA</p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion5.png" alt="">
+                    </div>
+                    <p class="descripcion">LUFFY</p>
+                    <span class="precio">$ 10.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion6.png" alt="">
+                    </div>
+                    <p class="descripcion">DEMOGORGON</p>
+                    <span class="precio">$ 9.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion7.png" alt="">
+                    </div>
+                    <p class="descripcion">JODA</p>
+                    <span class="precio">$ 7.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="impresiones3d/impresion8.png">
+                    </div>
+                    <p class="descripcion">STAR WARS</p>
+                    <span class="precio">$ 7.000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="remeras/remera1.png" alt="" id="img">
+                <h2 id="modelo">MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 8.000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">Consulta por medidas</option>
+
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - UNAGI!</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="graphs/logotipo.png">
+    </head>
+    <center>
+        <body style="background: linear-gradient(#f73636, #f73636)">
+        <header>
+            <div class="caja">
+                <a href="#" class="text" target="_blank"></a>
+                <h1><img src="graphs/contacto.gif"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html" style="color: white;">Inicio</a></li>
+                        <li><a href="productos.html" style="color: white;">Productos</a></li>
+                        <li><a href="contacto.html" style="color: darkgrey;">Contacto</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="mapa">
+                <h1 class="titulo-principal" style="color: #fff7f7;">NUESTRA UBICACIÓN</h1>
+                <p class="checkbox" style="color: #a5a4a4;">Nuestro establecimiento está ubicado en el sur de la ciudad</p>
+
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.8900857696244!2d-64.37177812432222!3d-33.138252073514806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2002448d3ff25%3A0x8c77b2d91b907c8d!2sPje.%20Calden%20%26%20Ing.%20Dinkeldein%2C%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1711419893788!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+
+            <form class="datos">
+            <h1 class="titulo-principal" style="color: #ffffff;">¡CONTACTATE CON NOSOTROS!</h1>
+            <br>
+                <label class="checkbox" for="nombreapellido" style="color: black;">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label class="checkbox" for="correoelectronico" style="color: black;">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label class="checkbox" for="telefono" style="color: black;">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label class="checkbox" for="mensaje" style="color: black;">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <center>
+                <fieldset>
+                <center> <legend class="checkbox" style="color: white;">¿Cómo le gustaría que lo contactemos?</legend></center>
+
+                    <label class="checkbox" for="radio-email" style="color: white;"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label class="checkbox" for="radio-telefono" style="color: white;"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label class="checkbox" for="radio-whatsapp" style="color: white;"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <center><legend style="color: white;">Horario de contacto</legend></center>
+                    <select>
+                        <option style="color: white;">Mañana</option>
+                        <option style="color: white;">Tarde</option>
+                        <option style="color: white;">Noche</option>
+                    </select>
+                </fieldset>
+                </center>
+                
+                <label class="checkbox" style="color: white;"><input type="checkbox" checked>¿Le gustaría recibir novedades de UNAGI-Shop?</label>                
+
+                    <input type="submit" href="mailto:franciscojlopezu@hotmail.com" value="Enviar formulario" class="enviar" style="color: white;">
+                    <!--<a href="">Enviar Mensaje</a>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>-->
+                
+
+            </form>
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="color: white;">Día</th>
+                        <th style="color: white;">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: white;">Lunes a viernes</td>
+                        <td style="color: whitesmoke;">09hs ~ 18hs</td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="color: white;">Sábado</td>
+                        <td style="color: whitesmoke;">09hs ~ 12hs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            
+        <img src="graphs/unagiLogo.png"/>
+        <p class="copyright" color="white">Copyright UNAGI!</p>
+        
+        </footer>
+    </body>
+    </center>
+</html>

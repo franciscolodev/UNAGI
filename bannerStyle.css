@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box
+    }
+    
+body{
+    font-family:"Roboto",sans-serif;
+    background-color:#f6f1e4
+}
+    
+#ad{
+    position:relative;
+    width:728px;
+    height:90px;
+    overflow:hidden
+    }
+#clicktag{
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+    color:black;
+    text-decoration:none
+    }
+#logo{
+    position:absolute;
+    left:17px;
+    top:10px
+    }
+.p{
+    position:absolute;
+    left:95px;
+    top:30px;
+    opacity:0;
+    font-size:24px
+    }
+.p1{
+    animation:texto1 4s ease 1 both
+    }
+.p2{
+    top:15px;
+    animation:texto2 4s ease 1 4s both
+    }
+.p3{
+    top:45px;
+    animation:texto2 4s ease 1 4.2s both
+    }
+#boton{
+    padding:4px 2px;
+    border-radius:2em;
+    display:inline-block;
+    font-size:14px;
+    font-weight:300;
+    position:absolute;
+    left:38px;
+    top:3px;
+    border:2px solid black;
+    z-index:2;
+    transition:all 0.5s ease}
+    
+#clicktag:hover 
+#boton{
+    background-color:black;
+    color:white
+    }
+.bg{
+    position:absolute;
+    top:0;
+    right:0
+    }
+.bg2{
+    animation:aparecerBg 2s ease 1 3s both
+    }
+
+@keyframes aparecerBg{
+    0%{opacity:0}to{opacity:1}
+    }
+    
+@-webkit-keyframes texto1{
+        0%{
+            opacity:0;
+        transform:translateY(20%)
+    }
+    20%{
+        opacity:1;
+        transform:translateY(0%)
+    }
+    80%{
+        opacity:1;
+        transform:translateY(0%)
+    }
+    to{
+        opacity:0;
+        transform:translateY(-20%)
+    }
+
+    }
+@-webkit-keyframes texto2{
+    0%{
+        opacity:0;
+        transform:translateY(20%)
+    }
+        20%{
+            opacity:1;
+            transform:translateY(0%)
+        }
+    to{
+        opacity:1;
+        transform:translateY(0%)
+    }
+}

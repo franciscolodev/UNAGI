@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <title>728x90</title> 
+        <style>
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box
+    }
+    
+body{
+    font-family:"Roboto",sans-serif;
+    background-color:#f6f1e4
+}
+    
+#ad{
+    position:relative;
+    width:728px;
+    height:90px;
+    overflow:hidden
+    }
+#clicktag{
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+    color:white;
+    text-decoration:none
+    }
+#logo{
+    position:absolute;
+    left:17px;
+    top:10px
+    }
+.p{
+    position:absolute;
+    left:95px;
+    top:30px;
+    opacity:0;
+    font-size:24px
+    }
+.p1{
+    animation:texto1 4s ease 1 both
+    }
+.p2{
+    top:15px;
+    animation:texto2 4s ease 1 4s both
+    }
+.p3{
+    top:45px;
+    animation:texto2 4s ease 1 4.2s both
+    }
+#boton{
+    padding:4px 2px;
+    border-radius:2em;
+    display:inline-block;
+    font-size:14px;
+    font-weight:300;
+    position:absolute;
+    left:38px;
+    top:3px;
+    border:2px solid white;
+    z-index:2;
+    transition:all 0.5s ease}
+    
+#clicktag:hover 
+#boton{
+    background-color:white;
+    color:white
+    }
+.bg{
+    position:absolute;
+    top:0;
+    right:0
+    }
+.bg2{
+    animation:aparecerBg 2s ease 1 3s both
+    }
+
+@keyframes aparecerBg{
+    0%{opacity:0}to{opacity:1}
+    }
+    
+@keyframes texto1{
+        0%{
+            opacity:0;
+        transform:translateY(20%)
+    }
+    20%{
+        opacity:1;
+        transform:translateY(0%)
+    }
+    80%{
+        opacity:1;
+        transform:translateY(0%)
+    }
+    to{
+        opacity:0;
+        transform:translateY(-20%)
+    }
+
+    }
+@keyframes texto2{
+    0%{
+        opacity:0;
+        transform:translateY(20%)
+    }
+        20%{
+            opacity:1;
+            transform:translateY(0%)
+        }
+    to{
+        opacity:1;
+        transform:translateY(0%)
+    }
+}
+</style>
+        </head>
+        <body> 
+            <div id="ad"> 
+                <a href="javascript:window.open(clickTag)" id="clicktag"> 
+        <div id="boton">Productos</div>
+        <img src="graphs/bg1.gif" alt="Imagen de fondo" class="bg bg1"> 
+        <img src="graphs/bg2.gif" alt="Imagen de fondo" class="bg bg2"> 
+        </a> 
+    </div>
+</body>
+</html>
